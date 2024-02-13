@@ -1,0 +1,52 @@
+.Popup {
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: 600px;
+    height: max-content;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background: #fff;
+
+    @media only screen and (max-width: 480px) {
+        width: 90%;
+    }
+
+    &-Header {
+        border-bottom: 1px solid gray;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &-Close {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid gray;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &-Success {
+        font-weight: 700;
+    }
+
+    &-Content {
+        padding: 15px;
+    }
+
+    &-Footer {
+        border-top: 1px solid gray;
+        padding: 15px;
+        text-align: center;
+    }
+}
